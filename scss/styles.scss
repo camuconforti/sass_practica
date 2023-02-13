@@ -1,0 +1,283 @@
+@import "./cv/cv";
+@import "./nosotros/nosotros";
+@import "../main";
+@import "./contacto/contacto";
+
+* {
+  margin: 0 !important;
+  padding:0 !important;
+  box-sizing: border-box !important;
+}
+body {
+    width: 100vw;
+    height: 135vh;
+    overflow-x: hidden;
+    }
+    
+header {
+      height: 7vh;
+
+      .bg-body-tertiary {
+        --bs-bg-opacity: 1;
+        background-color: rgb(212, 193, 224)!important;
+      }
+      .navbar-nav {
+       --bs-nav-link-color: rgba(59, 5, 66, 0.65);
+       --bs-nav-link-hover-color: rgba(245, 233, 237, 0.8);
+       --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+       display: flex;
+       flex-direction: column;
+       padding-left: 2;
+       margin-bottom: 0;
+       list-style: none;
+       justify-content: space-evenly;
+       align-items: center;
+       flex-wrap: wrap;
+       align-content: space-evenly;
+       }
+    }
+    
+main {  
+  height: 118vh;
+
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+        color: rgba(59, 5, 66, 0.65);
+      }
+      .btn-primary {
+        --bs-btn-color: #fff;
+        --bs-btn-bg: rgba(59, 5, 66, 0.65);
+        --bs-btn-border-color: rgba(59, 5, 66, 0.65)
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: rgba(59, 5, 66, 0.65);
+        --bs-btn-hover-border-color: rgba(59, 5, 66, 0.65);
+        --bs-btn-focus-shadow-rgb: 49,132,253;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: rgba(59, 5, 66, 0.65);
+        --bs-btn-active-border-color: rgba(59, 5, 66, 0.65);
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: #fff;
+        --bs-btn-disabled-bg: rgba(59, 5, 66, 0.65);
+        --bs-btn-disabled-border-color: rgba(59, 5, 66, 0.65);
+      }
+      .btn-outline-danger {
+        --bs-btn-color: rgba(59, 5, 66, 0.65);
+        --bs-btn-border-color: rgba(59, 5, 66, 0.65);
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: rgba(59, 5, 66, 0.65);
+        --bs-btn-hover-border-color: rgba(59, 5, 66, 0.65);
+        --bs-btn-focus-shadow-rgb: 220,53,69;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: rgba(59, 5, 66, 0.65);
+        --bs-btn-active-border-color: rgba(59, 5, 66, 0.65);
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: rgba(59, 5, 66, 0.65);
+        --bs-btn-disabled-bg: transparent;
+        --bs-btn-disabled-border-color: rgba(59, 5, 66, 0.65);
+        --bs-gradient: none;
+      }
+      
+    }
+
+footer {
+     height: 10vh;
+    //  margin-bottom: 0;
+
+     .bg-info {
+        --bs-bg-opacity: 1;
+        background-color: rgb(212, 193, 224)!important;
+      }
+      
+      li {
+        list-style-type: none;
+        a {
+            text-decoration: none;
+            }
+      }
+     .bi-linkedin {
+        color: #fff;
+        }
+     .bi-facebook {
+        color: #fff;
+        }
+     .bi-instagram {
+        color: #fff;
+        }     
+    }
+        
+    
+    @media (mid-width: 320px) {
+      .nosotras {
+          background-image: url(../assets/images/nosotras.png);
+          background-size: cover;
+          background-position: center;
+          height: 34vh;
+      }
+      .h3, h3 {
+        font-size: calc(1rem + .2vw);
+      }
+      }
+      
+      @media (mid-width: 375px) {
+        .nosotras {
+          background-image: url(../assets/images/nosotras.png);
+          background-size: cover;
+          background-position: center;
+          height: 40vh;
+      }
+      main {
+        height: 100%;
+      }
+      .h3, h3 {
+        font-size: calc(1.3rem + .2vw);
+      }
+      p {
+      font-size: 0.5rem !important;
+      }
+      legend {
+        float: left;
+        width: 40%;
+        padding: 0;
+        margin-bottom: 0.5rem;
+        font-size: calc(0.5rem + .1vw);
+        line-height: inherit;
+      }
+      footer {
+        bottom: 0;
+        }
+      }
+      
+
+
+      @media (mid-width: 320px) {
+        .nosotras {
+            background-image: url(../assets/images/nosotras.png);
+            background-size: cover;
+            background-position: center;
+            height: 34vh;
+        }
+        .h3, h3 {
+          font-size: calc(1rem + .2vw);
+        }
+        }
+        
+        @media (mid-width: 375px) {
+          .nosotras {
+            background-image: url(../assets/images/nosotras.png);
+            background-size: cover;
+            background-position: center;
+            height: 40vh;
+        }
+        main {
+          height: 100%;
+        }
+        .h3, h3 {
+          font-size: calc(1.3rem + .2vw);
+        }
+        p {
+        font-size: 0.5rem !important;
+        }
+        legend {
+          float: left;
+          width: 40%;
+          padding: 0;
+          margin-bottom: 0.5rem;
+          font-size: calc(0.5rem + .1vw);
+          line-height: inherit;
+        }
+        footer {
+          bottom: 0;
+          }
+        }
+        
+        @media(mid-width: 576px) {
+          main {
+            height: 100%;
+          }
+          legend {
+            float: left;
+            width: 50%;
+            padding: 0;
+            margin-bottom: 0.5rem;
+            font-size: calc(0.8rem + .2vw);
+            line-height: inherit;
+        }
+          footer {
+            position: fixed;
+            bottom: 0;
+          }
+        }
+        @media(mid-width: 768px) {
+          .nosotras {
+            background-image: url(../assets/images/nosotras.png);
+            background-size: cover;
+            background-position: center;
+            height: 65vh;
+        }
+          main {
+            height: 100%;
+          }
+          iframe {
+            width: 70%;
+            height: 150px;
+          }
+        
+          footer {
+            position: fixed;
+            bottom: 0;
+          }
+        }
+        
+        @media (max-width: 320px) {
+          .nosotras {
+            background-image: url(../assets/images/nosotras.png);
+            background-size: cover;
+            background-position: center;
+            height: 34vh;
+        }
+        }
+        
+        @media (max-width: 576px) {
+          .nosotras {
+            background-image: url(../assets/images/nosotras.png);
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+        }
+        iframe {
+          width: 65%;
+          height: 135px;
+        }
+        main {
+          height: 100%;
+        }
+        footer {
+          position: fixed;
+          bottom: 0;
+          }
+        }
+        
+        @media(max-width: 768px){
+          footer {
+            position: fixed;
+            bottom: 0;
+            clear: both;
+        }
+        .nosotras {
+          background-image: url(../assets/images/nosotras.png);
+          background-size: cover;
+          background-position: center;
+          height: 60vh;
+        }
+        }
+        @media(max-width: 992px){
+          footer {
+            position: fixed;
+            bottom: 0;
+            clear: both;
+        }
+        }
+        
