@@ -1,0 +1,10 @@
+main {
+    .border {
+       border: var(--bs-border-width) var(--bs-border-style) #896297!important;
+      }
+    
+    legend {
+      clear: left;
+      border-block-color:var(--bs-btn-active-border-color);
+      }         
+}
